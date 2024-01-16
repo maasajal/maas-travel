@@ -235,6 +235,42 @@ header .navbar nav > ul li:hover a {
   font-size: 1.75rem;
 }
 
+/* Why choose us styles */
+.why-choose-us p {
+  color: var(--paragraph1);
+}
+.why-choose-us .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.why-choose-us .card-container .card {
+  width: calc(50% - 1rem);
+}
+.why-choose-us .card-container .card .card1 {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  padding: 2rem;
+}
+.why-choose-us .card-container .card .card2 {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+  padding: 2rem;
+}
+.why-choose-us .card-container .card .card3 {
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+  padding: 2rem;
+}
+.why-choose-us .card-container .card h3 {
+  font-size: 1.25rem;
+  margin: 1rem auto;
+}
+
 /* Footer styles */
 footer {
   background-color: var(--footerBG);
@@ -297,7 +333,8 @@ footer .copyright {
   }
   .banner .banner-form,
   .popularTours,
-  .destination-country {
+  .destination-country,
+  .why-choose-us .card-container {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -315,6 +352,9 @@ footer .copyright {
   }
   .destination-country img {
     height: 175px;
+  }
+  .why-choose-us .card-container .card {
+    width: 100%;
   }
   footer {
     padding: 1rem 0;
