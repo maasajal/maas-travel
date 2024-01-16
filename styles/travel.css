@@ -368,6 +368,57 @@ header .navbar nav > ul li:hover a {
   border-radius: 1rem;
 }
 
+/* Car Rentals styles */
+.car-rent ul li {
+  list-style: none;
+  margin: 1rem auto;
+}
+.car-rent ul li i {
+  color: var(--mainColor);
+}
+.car-rent h3 {
+  margin: 1.5rem auto;
+}
+.car-rent .cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+.car-rent .card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.car-rent .card-container .card {
+  box-shadow: var(--darkMenu);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  overflow: hidden;
+}
+.car-rent .card-container .card img {
+  transition: scale 0.5s;
+}
+.car-rent .card-container .card:hover img {
+  scale: 1.2;
+}
+.car-rent .card-container .card span,
+.car-rent .card-container .card .fa-solid {
+  color: var(--mainColor);
+}
+.car-rent .book-now {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.car-rent .book-now .booknow {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
 /* Newsletter styles */
 .newsletter {
   display: flex;
@@ -532,6 +583,9 @@ footer .copyright {
   .perfect .contents ul li {
     font-size: 14px;
   }
+  .car-rent .card-container {
+    grid-template-columns: 1fr;
+  }
   .newsletter .contents {
     padding: 1.5rem;
   }
@@ -572,6 +626,9 @@ footer .copyright {
   }
   .perfect .video {
     height: 350px;
+  }
+  .car-rent .card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
   footer {
     padding: 1rem 0;
