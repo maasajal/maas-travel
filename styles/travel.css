@@ -56,6 +56,7 @@ p {
   border: 0;
   font-size: 20px;
   font-weight: 800;
+  cursor: pointer;
 }
 header span,
 footer span {
@@ -248,7 +249,7 @@ header .navbar nav > ul li:hover a {
   width: calc(50% - 1rem);
 }
 .why-choose-us .card-container .card img {
-    width: 5rem;
+  width: 5rem;
 }
 .why-choose-us .card-container .card .card1 {
   border-radius: 16px;
@@ -271,6 +272,66 @@ header .navbar nav > ul li:hover a {
 .why-choose-us .card-container .card h3 {
   font-size: 1.25rem;
   margin: 1rem auto;
+}
+
+/* Deals & Discounts styles */
+.discounts,
+.discounts-reverse {
+  padding: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem auto;
+}
+.discounts {
+  background: url("../images/Group39.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  justify-content: flex-end;
+}
+.discounts-reverse {
+  background: url("../images/Group40.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  justify-content: flex-start;
+}
+.discounts .deals-details,
+.discounts-reverse .deals-details {
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  padding: 3rem;
+  max-width: 450px;
+}
+.discounts .deals-details ul,
+.discounts-reverse .deals-details ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.discounts .deals-details ul li,
+.discounts-reverse .deals-details ul li {
+  list-style: none;
+}
+.discounts .deals-details ul li i,
+.discounts-reverse .deals-details ul li i {
+  color: var(--mainColor);
+}
+.discounts .deals-details h2,
+.discounts-reverse .deals-details h2 {
+  font-size: 1.5rem;
+}
+.discounts .deals-details p,
+.discounts-reverse .deals-details p {
+  color: var(--paragraph2);
+  margin: 1rem auto;
+}
+.discounts .deals-details h4,
+.discounts-reverse .deals-details h4 {
+  color: var(--mainColor);
+  margin-bottom: 1.5rem;
 }
 
 /* Simple Perfect Place styles */
@@ -448,6 +509,15 @@ footer .copyright {
   }
   .why-choose-us .card-container .card {
     width: 100%;
+  }
+  .discounts,
+  .discounts-reverse {
+    padding: 10px;
+  }
+  .discounts .deals-details,
+  .discounts-reverse .deals-details {
+    margin: 50% 14px 14px 14px;
+    padding: 1rem;
   }
   .perfect .video {
     height: 300px;
