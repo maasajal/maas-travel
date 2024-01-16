@@ -11,6 +11,7 @@
   --inputFooter: rgba(19, 19, 24, 0.3);
   --paragraph1: rgba(19, 19, 24, 0.7);
   --paragraph2: #5a5a5d;
+  --footerBG: rgba(19, 19, 24, 0.05);
 }
 
 /* Common shared styles */
@@ -48,6 +49,10 @@ p {
   background: var(--mainColor);
   color: var(--white);
 }
+header span,
+footer span {
+  color: var(--mainColor);
+}
 img {
   width: 100%;
   height: auto;
@@ -65,15 +70,12 @@ header .navbar .logo {
   align-items: center;
   gap: 1rem;
 }
-header .navbar .logo img {
+.logo img {
   width: 2.2rem;
   height: 2rem;
 }
 header .navbar .logo h3 {
   font-size: 2.25rem;
-}
-header span {
-  color: var(--mainColor);
 }
 header .navbar nav > ul {
   display: inline-flex;
@@ -145,6 +147,41 @@ header .navbar nav > ul li:hover a {
   color: var(--input);
 }
 
+/* Footer styles */
+footer {
+  background-color: var(--footerBG);
+  padding: 110px 0;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .logo h3 {
+  font-size: 2rem;
+}
+footer .container > p {
+  color: var(--paragraph2);
+  font-size: 14px;
+  max-width: 750px;
+  margin: 30px auto;
+}
+footer .icons a {
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--heading);
+}
+footer hr {
+  max-width: 872px;
+  background: rgba(19, 19, 24, 0.1);
+  margin: 50px auto;
+}
+footer .copyright {
+  font-family: Inter;
+  font-weight: 300;
+}
+
 /* Responsive Media queries */
 /* ======================== */
 /* Small Devices: max-width: 600px */
@@ -171,6 +208,19 @@ header .navbar nav > ul li:hover a {
   .banner .banner-form input {
     width: auto;
   }
+  footer {
+    padding: 1rem 0;
+  }
+  footer .logo h3 {
+    font-size: 22px;
+  }
+  footer hr {
+    margin: 20px auto;
+  }
+  footer .container > p {
+    margin: 1rem auto;
+    font-size: 14px;
+  }
 }
 /* Tablets: min-width: 600px and max-width: 992px */
 @media screen and (min-width: 600px) and (max-width: 992px) {
@@ -188,5 +238,8 @@ header .navbar nav > ul li:hover a {
   }
   .banner .banner-form input {
     width: auto;
+  }
+  footer {
+    padding: 1rem 0;
   }
 }
