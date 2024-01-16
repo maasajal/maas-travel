@@ -134,7 +134,7 @@ header .navbar nav > ul li:hover a {
 .banner .banner-form {
   display: inline-flex;
   padding: 1rem;
-  align-items: flex-start;
+  width: 90%;
   gap: 1.5rem;
   border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.3);
@@ -509,6 +509,11 @@ footer .copyright {
   }
   .why-choose-us .card-container .card {
     width: 100%;
+  }
+  .why-choose-us .card-container .card .card1,
+  .why-choose-us .card-container .card .card2,
+  .why-choose-us .card-container .card .card3 {
+    padding: 1.25rem;
   }
   .discounts,
   .discounts-reverse {
