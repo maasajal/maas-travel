@@ -247,6 +247,9 @@ header .navbar nav > ul li:hover a {
 .why-choose-us .card-container .card {
   width: calc(50% - 1rem);
 }
+.why-choose-us .card-container .card img {
+    width: 5rem;
+}
 .why-choose-us .card-container .card .card1 {
   border-radius: 16px;
   border: 1px solid rgba(251, 181, 99, 0.2);
