@@ -333,7 +333,9 @@ header .navbar nav > ul li:hover a {
   color: var(--mainColor);
   margin-bottom: 1.5rem;
 }
-
+.deals-discounts .center {
+  margin: 4rem auto;
+}
 /* Simple Perfect Place styles */
 .perfect {
   display: flex;
