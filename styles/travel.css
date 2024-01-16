@@ -270,6 +270,38 @@ header .navbar nav > ul li:hover a {
   margin: 1rem auto;
 }
 
+/* Simple Perfect Place styles */
+.perfect {
+  display: flex;
+  gap: 50px;
+}
+.perfect .contents {
+  width: 100%;
+}
+.perfect .contents p {
+  color: var(--paragraph2);
+  margin: 1.5rem auto;
+}
+.perfect .contents ul {
+  margin: 1.5rem auto;
+}
+.perfect .contents ul li {
+  margin: 1rem;
+  color: var(--heading);
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 1rem;
+}
+.perfect .video {
+  width: 100%;
+  border-radius: 1rem;
+}
+.perfect .video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
 /* Newsletter styles */
 .newsletter {
   display: flex;
@@ -367,6 +399,9 @@ footer .copyright {
     width: 90%;
     margin: 1.5rem auto;
   }
+  h2 {
+    font-size: 1.25rem;
+  }
   p {
     font-size: 14px;
   }
@@ -388,6 +423,7 @@ footer .copyright {
   .popularTours,
   .destination-country,
   .why-choose-us .card-container,
+  .perfect,
   .newsletter {
     flex-direction: column;
     gap: 1.5rem;
@@ -410,13 +446,18 @@ footer .copyright {
   .why-choose-us .card-container .card {
     width: 100%;
   }
+  .perfect .video {
+    height: 300px;
+  }
+  .perfect .contents ul li {
+    font-size: 14px;
+  }
   .newsletter .contents {
     padding: 1.5rem;
   }
   .newsletter .newsletter-img h3 {
     font-size: 1rem;
   }
-
   footer {
     padding: 1rem 0;
   }
@@ -431,9 +472,13 @@ footer .copyright {
     font-size: 14px;
   }
 }
+
 /* Tablets: min-width: 600px and max-width: 992px */
 @media screen and (min-width: 600px) and (max-width: 992px) {
-  header .navbar {
+  header .navbar,
+  .banner .banner-form,
+  .perfect,
+  .newsletter {
     flex-direction: column;
   }
   .banner {
@@ -442,11 +487,11 @@ footer .copyright {
   .banner h1 {
     margin-top: 3rem;
   }
-  .banner .banner-form {
-    flex-direction: column;
-  }
   .banner .banner-form input {
     width: auto;
+  }
+  .perfect .video {
+    height: 350px;
   }
   footer {
     padding: 1rem 0;
